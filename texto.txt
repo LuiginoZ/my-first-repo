@@ -1,0 +1,15 @@
+git diff
+
+diff --cc Feature.js
+index 1b1136f,c3be92f..0000000
+--- a/Feature.js
++++ b/Feature.js
+@@@ -1,4 -1,4 +1,8 @@@
+  let add = (a, b) => {
+++<<<<<<< HEAD
+ +  if(a + b > 10) { return 'way too much'}
+++=======
++   if(a + b > 10){ return 'too much' }
+++>>>>>>> d3b3cc0d9b6b084eef3e0afe111adf9fe612898e
+    return a + b;
+  }
